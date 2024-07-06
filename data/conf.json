@@ -1,0 +1,47 @@
+{
+	"Settings":{
+        "OrchestratorQueueName": "Dispatcher",
+        "OrchestratorQueueFolder": "",
+        "logF_BusinessProcessName": "Dispatcher",
+        "PerfQueue": "Performer",
+
+		
+        "SingleExecution": true,
+		"TimeoutShort":3000,
+		"TimeoutMedium":30000,
+		"TimeoutLong":120000,
+		"DelayShort":1000,
+		"DelayMedium":15000,
+		"DelayLong":60000,
+		"MaxRetryNumber": 0,
+        "MaxConsecutiveSystemExceptions": 3,
+		"RetryNumberGetTransactionItem": 2,
+        "RetryNumberSetTransactionStatus": 2,
+        "LogMessage_GetTransactionData": "Processing Transaction Number: ",
+        "LogMessage_GetTransactionDataError": "Error getting transaction data for Transaction Number: ",
+        "LogMessage_Success": "Transaction Successful.",
+        "LogMessage_BusinessRuleException": "Business rule exception.",
+        "LogMessage_ApplicationException": "System exception.",
+        "ExceptionMessage_ConsecutiveErrors": "The maximum number of consecutive system exceptions was reached.",
+
+        "ShouldMarkJobAsFaulted": false,
+		"DateFormat": "ddMMyyyy",
+		
+		
+		"B001": "Sample Business Exception",
+		"S001": "Sample System Exception"
+	},
+	
+	"Assets":[
+	{
+		"name": "dispItems",
+		"asset": "dispItems",
+		"orchFolder": ""
+	},
+	{
+		"name": "pH",
+		"asset": "pH",
+		"orchFolder": ""
+	}
+	]
+}
