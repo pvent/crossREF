@@ -3,7 +3,9 @@
     {
       "Path": null,
       "SortBy": 0,
-      "VariablesSectionElementsOrder": [],
+      "VariablesSectionElementsOrder": [
+        "gb_Config&"
+      ],
       "ArgumentsSectionElementsOrder": null,
       "ConstantsSectionElementsOrder": [],
       "AddedNamespaces": null
@@ -12,17 +14,16 @@
       "Path": "Main.xaml",
       "SortBy": 0,
       "VariablesSectionElementsOrder": [
+        "strTransactionID&StateMachine_1",
+        "strTransactionField1&StateMachine_1",
+        "strTransactionField2&StateMachine_1",
+        "intRetryNumber&StateMachine_1",
+        "intTransactionNumber&StateMachine_1",
+        "intConsecutiveSystemExceptions&StateMachine_1",
+        "gb_Config&Sequence_18",
         "ShouldStop&Sequence_7",
-        "dt_TransactionData&StateMachine_1",
-        "TransactionID&StateMachine_1",
-        "TransactionField1&StateMachine_1",
-        "TransactionField2&StateMachine_1",
-        "RetryNumber&StateMachine_1",
-        "Config&StateMachine_1",
-        "TransactionNumber&StateMachine_1",
         "BusinessException&StateMachine_1",
         "TransactionItem&StateMachine_1",
-        "ConsecutiveSystemExceptions&StateMachine_1",
         "SystemException&StateMachine_1"
       ],
       "ArgumentsSectionElementsOrder": [
@@ -33,28 +34,29 @@
       "AddedNamespaces": null
     },
     {
-      "Path": "Framework/InitAllSettings.xaml",
+      "Path": "framework/InitAllSettings.xaml",
       "SortBy": 0,
       "VariablesSectionElementsOrder": [
+        "gb_Config&Sequence_18",
+        "dicConfig&Sequence_2",
         "strConfig&Sequence_2",
-        "strAssets&Sequence_2",
         "AssetValue&Sequence_18",
         "jobjConfig&Sequence_2"
       ],
       "ArgumentsSectionElementsOrder": [
-        "in_strConfigFile",
-        "out_Config"
+        "in_strConfigFile"
       ],
       "ConstantsSectionElementsOrder": [],
       "AddedNamespaces": null
     },
     {
-      "Path": "Framework/GetTransactionData.xaml",
+      "Path": "framework/GetTransactionData.xaml",
       "SortBy": 0,
-      "VariablesSectionElementsOrder": [],
+      "VariablesSectionElementsOrder": [
+        "gb_Config&Sequence_18"
+      ],
       "ArgumentsSectionElementsOrder": [
         "in_TransactionNumber",
-        "in_Config",
         "out_TransactionItem",
         "out_TransactionField1",
         "out_TransactionField2",
@@ -64,48 +66,49 @@
       "AddedNamespaces": null
     },
     {
-      "Path": "Framework/SetTransactionStatus.xaml",
+      "Path": "framework/SetTransactionStatus.xaml",
       "SortBy": 0,
       "VariablesSectionElementsOrder": [
-        "QueueRetry&Sequence_17",
-        "ScreenshotPath&Sequence_17"
+        "boolQueueRetry&Sequence_17",
+        "gb_Config&Sequence_18"
       ],
       "ArgumentsSectionElementsOrder": [
+        "in_strTransactionField1",
+        "in_strTransactionField2",
+        "in_strTransactionID",
+        "io_intRetryNumber",
+        "io_intTransactionNumber",
+        "io_intConsecutiveSExceptions",
         "in_BusinessException",
-        "in_TransactionField1",
-        "in_TransactionField2",
-        "in_TransactionID",
         "in_SystemException",
-        "in_Config",
-        "in_TransactionItem",
-        "io_RetryNumber",
-        "io_TransactionNumber",
-        "io_ConsecutiveSystemExceptions"
+        "in_TransactionItem"
       ],
       "ConstantsSectionElementsOrder": [],
       "AddedNamespaces": null
     },
     {
-      "Path": "Framework/Process.xaml",
+      "Path": "framework/Process.xaml",
       "SortBy": 0,
-      "VariablesSectionElementsOrder": [],
+      "VariablesSectionElementsOrder": [
+        "gb_Config&Sequence_18"
+      ],
       "ArgumentsSectionElementsOrder": [
-        "in_TransactionItem",
-        "in_Config"
+        "in_TransactionItem"
       ],
       "ConstantsSectionElementsOrder": [],
       "AddedNamespaces": null
     },
     {
-      "Path": "Framework/RetryCurrentTransaction.xaml",
+      "Path": "framework/RetryCurrentTransaction.xaml",
       "SortBy": 0,
-      "VariablesSectionElementsOrder": [],
+      "VariablesSectionElementsOrder": [
+        "gb_Config&Sequence_18"
+      ],
       "ArgumentsSectionElementsOrder": [
-        "in_Config",
-        "io_RetryNumber",
-        "io_TransactionNumber",
-        "in_SystemException",
-        "in_QueueRetry"
+        "in_boolQueueRetry",
+        "io_intTransactionNumber",
+        "io_intRetryNumber",
+        "in_SystemException"
       ],
       "ConstantsSectionElementsOrder": [],
       "AddedNamespaces": null

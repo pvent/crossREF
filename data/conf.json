@@ -1,6 +1,6 @@
 {
 	"Settings":{
-        "OrchestratorQueueName": "Dispatcher",
+        "OrchestratorQueueName": "crossREF",
         "OrchestratorQueueFolder": "",
         "logF_BusinessProcessName": "Dispatcher",
         "PerfQueue": "Performer",
@@ -25,7 +25,8 @@
         "ExceptionMessage_ConsecutiveErrors": "The maximum number of consecutive system exceptions was reached.",
 
         "ShouldMarkJobAsFaulted": false,
-		"DateFormat": "ddMMyyyy",
+		"DateFormatShort": "ddMMyyyy",
+		"DateFormatLong": "ddMMyyyy_HHmmss",
 		
 		
 		"B001": "Sample Business Exception",
