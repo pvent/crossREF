@@ -14,6 +14,7 @@
       "Path": "Main.xaml",
       "SortBy": 0,
       "VariablesSectionElementsOrder": [
+        "gb_Config&Sequence_30",
         "strTransactionID&StateMachine_1",
         "strTransactionField1&StateMachine_1",
         "strTransactionField2&StateMachine_1",
@@ -69,8 +70,8 @@
       "Path": "framework/SetTransactionStatus.xaml",
       "SortBy": 0,
       "VariablesSectionElementsOrder": [
-        "boolQueueRetry&Sequence_17",
-        "gb_Config&Sequence_18"
+        "gb_Config&Sequence_30",
+        "boolQueueRetry&Sequence_17"
       ],
       "ArgumentsSectionElementsOrder": [
         "in_strTransactionField1",
